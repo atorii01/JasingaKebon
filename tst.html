@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panduan Lengkap Budidaya Durian</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">🌳</span>
+      <span class="brand-text">JasingaDurian</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-item">Beranda</a></li>
+      <li><a href="#bab1" class="nav-item">Pembibitan</a></li>
+      <li><a href="#bab2" class="nav-item">Penanaman</a></li>
+      <li><a href="#bab3" class="nav-item">Penyakit</a></li>
+      <li><a href="#bab4" class="nav-item">Pruning</a></li>
+      <li><a href="#bab5" class="nav-item">Penyemprotan</a></li>
+      <li><a href="#bab6" class="nav-item">Pembuahan</a></li>
+      <li><a href="#bab7" class="nav-item">Panen</a></li>
+      <li><a href="#bab8" class="nav-item">Pemupukan</a></li>
+      <li><a href="#faq" class="nav-item">FAQ</a></li>
+    </ul>
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="toggle-icon sun">☀️</span>
+      <span class="toggle-icon moon">🌙</span>
+    </button>
+  </nav>
+
+  <!-- ======================== SIDEBAR (desktop) ======================== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">Daftar Isi</div>
+    <nav class="sidebar-nav">
+      <a href="#hero" class="sidebar-link active" data-section="hero">🏠 Beranda</a>
+      <a href="#bab1" class="sidebar-link" data-section="bab1">🌱 Pembibitan</a>
+      <a href="#bab2" class="sidebar-link" data-section="bab2">🌿 Penanaman</a>
+      <a href="#bab3" class="sidebar-link" data-section="bab3">🦠 Penyakit</a>
+      <a href="#bab4" class="sidebar-link" data-section="bab4">✂️ Pruning</a>
+      <a href="#bab5" class="sidebar-link" data-section="bab5">💧 Penyemprotan</a>
+      <a href="#bab6" class="sidebar-link" data-section="bab6">🌸 Pembuahan</a>
+      <a href="#bab7" class="sidebar-link" data-section="bab7">🍈 Panen</a>
+      <a href="#bab8" class="sidebar-link" data-section="bab8">🧪 Pemupukan</a>
+      <a href="#referensi" class="sidebar-link" data-section="referensi">📚 Referensi</a>
+      <a href="#faq" class="sidebar-link" data-section="faq">❓ FAQ</a>
+    </nav>
+    <!-- Progress bar -->
+    <div class="reading-progress">
+      <div class="progress-label">Progress Membaca</div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-pct" id="progressPct">0%</div>
+    </div>
+  </aside>
+
+  <!-- ======================== MAIN WRAPPER ======================== -->
+  <div class="main-wrapper">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-content">
+        <div class="hero-badge reveal">📖 E-Book Digital</div>
+        <h1 class="hero-title reveal">
+          Panduan Lengkap<br />
+          <em>Budidaya Durian</em>
+        </h1>
+        <p class="hero-subtitle reveal">
+          Dari pembibitan hingga panen — panduan praktis untuk petani pemula hingga menengah
+          yang ingin meraih hasil durian berkualitas tinggi.
+        </p>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num">8</span><span class="stat-label">Bab</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Tips Praktis</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Gratis</span></div>
+        </div>
+        <div class="hero-actions reveal">
+          <a href="#bab1" class="btn-primary">Mulai Membaca</a>
+          <a href="#faq" class="btn-outline">Lihat FAQ</a>
+        </div>
+      </div>
+      <div class="hero-illustration reveal">
+        <div class="illus-frame">
+          <div class="illus-placeholder">
+            🌳
+            <p>Ilustrasi: Kebun Durian Subur</p>
+            <small>Perkebunan durian tropis yang produktif</small>
+          </div>
+        </div>
+        <!-- Floating badges -->
+        <div class="float-badge badge-top">🌿 Organik</div>
+        <div class="float-badge badge-mid">⭐ Unggul</div>
+        <div class="float-badge badge-bot">🏆 Premium</div>
+      </div>
+    </section>
+
+    <!-- ===== BAB 1: PEMBIBITAN ===== -->
+    <section class="chapter" id="bab1">
+      <div class="chapter-number reveal">Bab 01</div>
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">🌱</div>
+        <h2 class="chapter-title">Pembibitan</h2>
+        <p class="chapter-desc">Fondasi keberhasilan budidaya dimulai dari pemilihan dan perawatan bibit yang tepat.</p>
+      </div>
+
+      <div class="chapter-body">
+        <div class="concept-card reveal">
+          <h3>📌 Ringkasan Konsep</h3>
+          <p>Pembibitan adalah tahap paling krusial dalam budidaya durian. Kualitas bibit menentukan produktivitas jangka panjang tanaman. Bibit unggul berasal dari varietas bersertifikat yang telah teruji ketahanannya terhadap hama dan penyakit, serta memiliki produktivitas tinggi.</p>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="steps-card">
+            <h3>✅ Langkah-Langkah Praktis</h3>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span><div><strong>Pilih Varietas Unggul</strong><br/>Musang King, Monthong, D24, atau Bawor — sesuaikan dengan iklim lokal.</div></li>
+              <li><span class="step-num">2</span><div><strong>Persiapkan Media Tanam</strong><br/>Campuran tanah, kompos, dan pasir (3:2:1). pH ideal 5,5–6,5.</div></li>
+              <li><span class="step-num">3</span><div><strong>Perlakuan Awal Benih</strong><br/>Rendam benih dalam air hangat 40°C selama 24 jam sebelum semai.</div></li>
+              <li><span class="step-num">4</span><div><strong>Penyemaian</strong><br/>Letakkan benih pada polybag kecil, tutup tipis dengan tanah halus.</div></li>
+              <li><span class="step-num">5</span><div><strong>Penyiraman Rutin</strong><br/>Siram pagi dan sore, jaga kelembaban namun hindari genangan.</div></li>
+              <li><span class="step-num">6</span><div><strong>Pemindahan Bibit</strong><br/>Pindahkan setelah memiliki 4–6 daun sejati (±3 bulan).</div></li>
+            </ul>
+          </div>
+
+          <div class="illus-card reveal">
+            <div class="chapter-illus">🌱<p>Ilustrasi: Proses Penyemaian Benih Durian</p><small>Benih dalam polybag penyemaian dengan media tanam ideal</small></div>
+            <div class="tip-box">
+              <div class="tip-header">💡 Tips Ahli</div>
+              <ul>
+                <li>Gunakan bibit hasil okulasi atau sambung pucuk untuk panen lebih cepat (3–4 tahun vs 8–10 tahun dari biji).</li>
+                <li>Simpan bibit di tempat teduh selama 1 minggu sebelum tanam di lahan.</li>
+                <li>Pilih bibit yang bebas hama, batang kokoh, dan daun hijau segar.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BAB 2: PENANAMAN ===== -->
+    <section class="chapter chapter-alt" id="bab2">
+      <div class="chapter-number reveal">Bab 02</div>
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">🌿</div>
+        <h2 class="chapter-title">Penanaman</h2>
+        <p class="chapter-desc">Teknik penanaman yang benar menentukan pertumbuhan akar dan produktivitas jangka panjang.</p>
+      </div>
+
+      <div class="chapter-body">
+        <div class="concept-card reveal">
+          <h3>📌 Ringkasan Konsep</h3>
+          <p>Durian membutuhkan lahan dengan drainase baik, paparan sinar matahari penuh, dan tanah yang kaya bahan organik. Persiapan lahan yang matang — termasuk pengolahan tanah dan pembuatan lubang tanam — sangat menentukan adaptasi awal tanaman.</p>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="steps-card">
+            <h3>✅ Langkah-Langkah Praktis</h3>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span><div><strong>Analisis Lahan</strong><br/>Pastikan kemiringan lahan &lt;30°, pH tanah 5,5–6,5, dan bebas banjir.</div></li>
+              <li><span class="step-num">2</span><div><strong>Pengolahan Tanah</strong><br/>Bajak tanah sedalam 30–40 cm, tambahkan kapur dolomit jika pH kurang dari 5,5.</div></li>
+              <li><span class="step-num">3</span><div><strong>Buat Lubang Tanam</strong><br/>Ukuran 60×60×60 cm. Diamkan 2 minggu sebelum tanam.</div></li>
+              <li><span class="step-num">4</span><div><strong>Isi dengan Pupuk Dasar</strong><br/>Campurkan tanah galian dengan 20 kg kompos + 500 g TSP per lubang.</div></li>
+              <li><span class="step-num">5</span><div><strong>Jarak Tanam Ideal</strong><br/>8×8 m untuk monokultur, atau 10×10 m untuk tumpangsari.</div></li>
+              <li><span class="step-num">6</span><div><strong>Penanaman</strong><br/>Tanam pada awal musim hujan, lepas polybag hati-hati, padatkan tanah di sekitar akar.</div></li>
+            </ul>
+          </div>
+
+          <div class="illus-card reveal">
+            <div class="chapter-illus">🌿<p>Ilustrasi: Layout Jarak Tanam 8×8 Meter</p><small>Pola penanaman dengan jarak optimal untuk sirkulasi udara</small></div>
+            <div class="tip-box">
+              <div class="tip-header">💡 Tips Ahli</div>
+              <ul>
+                <li>Tanam di pagi hari atau sore hari untuk menghindari stres panas pada bibit.</li>
+                <li>Pasang ajir (tongkat penopang) untuk bibit muda agar tidak roboh saat angin kencang.</li>
+                <li>Buat guludan kecil di sekitar pohon untuk mencegah genangan air.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BAB 3: PENYAKIT ===== -->
+    <section class="chapter" id="bab3">
+      <div class="chapter-number reveal">Bab 03</div>
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">🦠</div>
+        <h2 class="chapter-title">Mengatasi Penyakit</h2>
+        <p class="chapter-desc">Deteksi dini dan penanganan tepat adalah kunci menjaga kebun durian tetap produktif.</p>
+      </div>
+
+      <div class="chapter-body">
+        <div class="concept-card reveal">
+          <h3>📌 Ringkasan Konsep</h3>
+          <p>Durian rentan terhadap berbagai penyakit jamur dan bakteri, terutama saat musim hujan atau drainase buruk. Pengenalan gejala secara dini dan kombinasi antara pencegahan organik serta pengobatan yang tepat dapat meminimalkan kehilangan hasil panen.</p>
+        </div>
+
+        <!-- Disease cards -->
+        <div class="disease-grid reveal">
+          <div class="disease-card">
+            <div class="disease-icon">🍂</div>
+            <h4>Phytophthora (Busuk Akar)</h4>
+            <p><strong>Gejala:</strong> Daun menguning, batang bawah membusuk, getah coklat keluar.</p>
+            <p><strong>Pencegahan:</strong> Drainase baik, hindari genangan.</p>
+            <p><strong>Organik:</strong> Siram ekstrak bawang putih di pangkal batang.</p>
+            <p><strong>Kimia:</strong> Metalaxyl 35% dengan dosis 2 g/L air.</p>
+          </div>
+          <div class="disease-card">
+            <div class="disease-icon">🍁</div>
+            <h4>Canker (Luka Batang)</h4>
+            <p><strong>Gejala:</strong> Luka kecoklatan pada batang, jaringan mati menyebar.</p>
+            <p><strong>Pencegahan:</strong> Sanitasi luka pasca pemangkasan dengan fungisida.</p>
+            <p><strong>Organik:</strong> Oleskan pasta kapur belerang pada luka.</p>
+            <p><strong>Kimia:</strong> Copper oxychloride 50% dosis 3 g/L air.</p>
+          </div>
+          <div class="disease-card">
+            <div class="disease-icon">🌑</div>
+            <h4>Antraknos</h4>
+            <p><strong>Gejala:</strong> Bercak hitam pada daun dan buah muda.</p>
+            <p><strong>Pencegahan:</strong> Pangkas cabang yang padat untuk sirkulasi udara.</p>
+            <p><strong>Organik:</strong> Semprot larutan bikarbonat 5 g/L.</p>
+            <p><strong>Kimia:</strong> Mankozeb 80% dosis 2 g/L air.</p>
+          </div>
+        </div>
+
+        <div class="two-col reveal" style="margin-top:2rem;">
+          <div class="steps-card">
+            <h3>✅ Langkah Pencegahan</h3>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span><div>Pastikan drainase lahan berfungsi optimal sepanjang tahun.</div></li>
+              <li><span class="step-num">2</span><div>Lakukan sanitasi kebun — buang daun dan buah gugur secara rutin.</div></li>
+              <li><span class="step-num">3</span><div>Hindari melukai batang saat pemangkasan, aplikasikan fungisida preventif.</div></li>
+              <li><span class="step-num">4</span><div>Monitor kebun minimal 2× seminggu pada musim hujan.</div></li>
+            </ul>
+          </div>
+          <div class="illus-card reveal">
+            <div class="chapter-illus">🦠<p>Ilustrasi: Gejala Penyakit Phytophthora</p><small>Identifikasi visual busuk akar dan batang pada durian</small></div>
+            <div class="tip-box">
+              <div class="tip-header">💡 Tips Ahli</div>
+              <ul>
+                <li>Rotasi jenis fungisida setiap 2 siklus penyemprotan untuk mencegah resistensi.</li>
+                <li>Catat setiap gejala dan tanggal kemunculannya untuk pola deteksi awal.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BAB 4: PRUNING ===== -->
+    <section class="chapter chapter-alt" id="bab4">
+      <div class="chapter-number reveal">Bab 04</div>
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">✂️</div>
+        <h2 class="chapter-title">Pruning (Pemangkasan)</h2>
+        <p class="chapter-desc">Pemangkasan strategis meningkatkan produktivitas dan mencegah penumpukan penyakit.</p>
+      </div>
+
+      <div class="chapter-body">
+        <div class="concept-card reveal">
+          <h3>📌 Ringkasan Konsep</h3>
+          <p>Pemangkasan adalah seni membentuk struktur pohon agar energi terpusat pada pembentukan buah, bukan pertumbuhan vegetatif berlebihan. Pohon durian yang dipangkas dengan benar memiliki kanopi terbuka yang memungkinkan cahaya matahari dan udara menembus ke seluruh bagian pohon.</p>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="steps-card">
+            <h3>✅ Teknik Pemangkasan</h3>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span><div><strong>Pemangkasan Pembentukan (Tahun 1–3)</strong><br/>Bentuk kerangka pohon dengan 3–4 cabang utama. Potong tunas air dan cabang yang tumbuh ke dalam.</div></li>
+              <li><span class="step-num">2</span><div><strong>Pemangkasan Pemeliharaan</strong><br/>Lakukan setelah panen. Potong cabang sakit, mati, atau saling bersilangan.</div></li>
+              <li><span class="step-num">3</span><div><strong>Waktu Terbaik</strong><br/>2–4 minggu setelah panen saat pohon dalam kondisi istirahat fisiologis.</div></li>
+              <li><span class="step-num">4</span><div><strong>Sanitasi Alat</strong><br/>Sterilkan gunting/gergaji dengan alkohol 70% sebelum dan sesudah digunakan.</div></li>
+              <li><span class="step-num">5</span><div><strong>Penutupan Luka</strong><br/>Oleskan pasta fungisida atau cat penutup luka pada bekas potongan berdiameter &gt;2 cm.</div></li>
+            </ul>
+          </div>
+          <div class="illus-card reveal">
+            <div class="chapter-illus">✂️<p>Ilustrasi: Bentuk Kanopi Ideal Setelah Pruning</p><small>Struktur pohon terbuka dengan 3 cabang primer yang seimbang</small></div>
+            <div class="tip-box">
+              <div class="tip-header">💡 Tips Ahli</div>
+              <ul>
+                <li>Jangan memangkas lebih dari 30% total kanopi dalam satu sesi — terlalu agresif bisa stres pohon.</li>
+                <li>Pemangkasan ringan sebelum musim berbunga merangsang pembentukan bunga lebih banyak.</li>
+                <li>Buang semua cabang yang tumbuh tegak lurus ke atas (tunas air/water shoot).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefit-grid reveal">
+          <div class="benefit-item"><span>☀️</span><p>Cahaya merata ke seluruh tajuk</p></div>
+          <div class="benefit-item"><span>💨</span><p>Sirkulasi udara lebih baik</p></div>
+          <div class="benefit-item"><span>🍈</span><p>Buah lebih besar & seragam</p></div>
+          <div class="benefit-item"><span>🦠</span><p>Risiko penyakit berkurang</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BAB 5: PENYEMPROTAN ===== -->
+    <section class="chapter" id="bab5">
+      <div class="chapter-number reveal">Bab 05</div>
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">💧</div>
+        <h2 class="chapter-title">Penyemprotan</h2>
+        <p class="chapter-desc">Jadwal dan dosis yang tepat melindungi tanaman sekaligus menjaga kelestarian lingkungan.</p>
+      </div>
+
+      <div class="chapter-body">
+        <div class="concept-card reveal">
+          <h3>📌 Ringkasan Konsep</h3>
+          <p>Penyemprotan pestisida dan fungisida harus dilakukan secara terencana berdasarkan siklus tumbuh dan kondisi cuaca. Penggunaan berlebihan justru merusak ekosistem kebun dan mempercepat resistensi hama. Prinsip IPM (Integrated Pest Management) sangat dianjurkan.</p>
+        </div>
+
+        <div class="spray-schedule reveal">
+          <h3>📅 Jadwal Penyemprotan</h3>
+          <div class="schedule-table">
+            <div class="schedule-row header">
+              <span>Fase</span><span>Frekuensi</span><span>Jenis</span><span>Catatan</span>
+            </div>
+            <div class="schedule-row">
+              <span>Vegetatif</span><span>2×/bulan</span><span>Fungisida preventif</span><span>Fokus pada tunas muda</span>
+            </div>
+            <div class="schedule-row">
+              <span>Pra-Berbunga</span><span>1×/minggu</span><span>Insektisida + Boron</span><span>Lindungi bakal bunga</span>
+            </div>
+            <div class="schedule-row">
+              <span>Berbunga</span><span>Hindari spray</span><span>—</span><span>Jaga penyerbuk alami</span>
+            </div>
+            <div class="schedule-row">
+              <span>Buah Muda</span><span>1×/2 minggu</span><span>Fungisida ringan</span><span>Dosis setengah normal</span>
+            </div>
+            <div class="schedule-row">
+              <span>Pra-Panen</span><span>Stop 3 minggu</span><span>—</span><span>Masa karantina pestisida</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="steps-card">
+            <h3>✅ Langkah-Langkah Penyemprotan</h3>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span><div>Semprot pada pagi hari (07.00–09.00) atau sore (16.00–18.00).</div></li>
+              <li><span class="step-num">2</span><div>Jangan semprot saat cuaca berangin atau sebelum hujan.</div></li>
+              <li><span class="step-num">3</span><div>Gunakan nozzle yang menghasilkan droplet halus merata.</div></li>
+              <li><span class="step-num">4</span><div>Semprotkan hingga seluruh permukaan daun (atas & bawah) basah merata.</div></li>
+              <li><span class="step-num">5</span><div>Pakai APD: masker, sarung tangan, kacamata pelindung.</div></li>
+            </ul>
+          </div>
+          <div class="illus-card reveal">
+            <div class="chapter-illus">💧<p>Ilustrasi: Teknik Penyemprotan yang Benar</p><small>Arah semprotan dari bawah ke atas untuk meratakan droplet</small></div>
+            <div class="tip-box">
+              <div class="tip-header">💡 Tips Ahli</div>
+              <ul>
+                <li>Tambahkan perekat (sticker) pada campuran agar larutan tidak langsung mengalir saat hujan ringan.</li>
+                <li>Gunakan sprayer dengan tekanan konstan untuk hasil semprotan yang seragam.</li>
+                <li>Cuci tangki sprayer setelah setiap penggunaan untuk mencegah kontaminasi silang.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BAB 6: PEMBUAHAN ===== -->
+    <section class="chapter chapter-alt" id="bab6">
+      <div class="chapter-number reveal">Bab 06</div>
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">🌸</div>
+        <h2 class="chapter-title">Persiapan Pembuahan</h2>
+        <p class="chapter-desc">Memaksimalkan potensi berbunga dan pembuahan untuk hasil panen yang optimal.</p>
+      </div>
+
+      <div class="chapter-body">
+        <div class="concept-card reveal">
+          <h3>📌 Ringkasan Konsep</h3>
+          <p>Proses pembuahan durian dimulai jauh sebelum bunga mekar. Induksi stres fisiologis yang terkontrol — melalui pengaturan air dan nutrisi — adalah teknik yang digunakan petani profesional untuk merangsang pembungaan serentak dan meningkatkan jumlah buah set.</p>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="steps-card">
+            <h3>✅ Langkah Persiapan Pembuahan</h3>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span><div><strong>Pembersihan Lahan</strong><br/>Bersihkan gulma, sisakan mulsa organik di sekitar pohon untuk menjaga kelembaban akar.</div></li>
+              <li><span class="step-num">2</span><div><strong>Stres Air Terkontrol</strong><br/>Hentikan penyiraman selama 15–20 hari untuk merangsang inisiasi bunga (jika tidak ada hujan alami).</div></li>
+              <li><span class="step-num">3</span><div><strong>Aplikasi Pupuk Kalium</strong><br/>Berikan KCl atau K2SO4 (200 g/pohon) 2 bulan sebelum target berbunga.</div></li>
+              <li><span class="step-num">4</span><div><strong>Pupuk Boron</strong><br/>Semprot foliar Boron 0,3% untuk meningkatkan kualitas tepung sari.</div></li>
+              <li><span class="step-num">5</span><div><strong>Persiapan Penyerbukan</strong><br/>Sediakan kelelawar alami atau lakukan penyerbukan bantuan (hand pollination) saat bunga mekar malam hari.</div></li>
+              <li><span class="step-num">6</span><div><strong>Penjarangan Buah</strong><br/>Sisakan 1–2 buah per tandan untuk kualitas optimal saat buah sebesar telur ayam.</div></li>
+            </ul>
+          </div>
+          <div class="illus-card reveal">
+            <div class="chapter-illus">🌸<p>Ilustrasi: Penyerbukan Bantuan (Hand Pollination)</p><small>Teknik memindahkan serbuk sari antar bunga dengan kuas halus</small></div>
+            <div class="tip-box">
+              <div class="tip-header">💡 Tips Ahli</div>
+              <ul>
+                <li>Pasang lampu UV di sekitar pohon untuk menarik kelelawar penyerbuk alami pada malam hari.</li>
+                <li>Catat tanggal mulai stres air — ini membantu memprediksi waktu berbunga (±30–45 hari).</li>
+                <li>Hindari menggunakan insektisida saat bunga mekar untuk menjaga penyerbuk alami.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BAB 7: PANEN ===== -->
+    <section class="chapter" id="bab7">
+      <div class="chapter-number reveal">Bab 07</div>
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">🍈</div>
+        <h2 class="chapter-title">Panen</h2>
+        <p class="chapter-desc">Mengenali saat panen yang tepat adalah kunci mendapatkan durian dengan kualitas terbaik.</p>
+      </div>
+
+      <div class="chapter-body">
+        <div class="concept-card reveal">
+          <h3>📌 Ringkasan Konsep</h3>
+          <p>Panen durian pada waktu yang tepat menentukan cita rasa, aroma, dan nilai jual. Durian dipanen terlalu dini menghasilkan buah hambar; terlalu terlambat menyebabkan buah terlalu matang dan pecah di pohon. Kenali indikator kematangan secara visual, auditory, dan aroma.</p>
+        </div>
+
+        <div class="indicator-grid reveal">
+          <div class="indicator-card">
+            <div class="ind-icon">👁️</div>
+            <h4>Visual</h4>
+            <ul>
+              <li>Sutura (celah antar segmen) mulai terbuka sedikit</li>
+              <li>Warna kulit berubah dari hijau tua ke hijau kekuningan</li>
+              <li>Duri-duri mulai merenggang dan ujungnya mengeras</li>
+            </ul>
+          </div>
+          <div class="indicator-card">
+            <div class="ind-icon">👂</div>
+            <h4>Auditory</h4>
+            <ul>
+              <li>Suara "dung" berat saat diketuk (bukan "boing" kosong)</li>
+              <li>Gemerisik halus terdengar saat buah digoyangkan</li>
+              <li>Batang buah berbunyi kering jika digesek</li>
+            </ul>
+          </div>
+          <div class="indicator-card">
+            <div class="ind-icon">👃</div>
+            <h4>Aroma</h4>
+            <ul>
+              <li>Aroma durian yang khas mulai tercium dari jarak 1–2 meter</li>
+              <li>Aroma semakin kuat pada pagi dan sore hari yang lembab</li>
+            </ul>
+          </div>
+          <div class="indicator-card">
+            <div class="ind-icon">📅</div>
+            <h4>Waktu</h4>
+            <ul>
+              <li>95–120 hari setelah fruit set (tergantung varietas)</li>
+              <li>Musang King: 110–120 hari</li>
+              <li>Monthong: 100–115 hari</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="steps-card">
+            <h3>✅ Teknik Panen & Penyimpanan</h3>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span><div>Panen saat buah jatuh alami atau saat 90% indikator terpenuhi.</div></li>
+              <li><span class="step-num">2</span><div>Jika dipanen sebelum jatuh, potong tangkai dengan menyisakan 5–10 cm.</div></li>
+              <li><span class="step-num">3</span><div>Gunakan jaring penangkap di bawah pohon untuk mencegah buah pecah.</div></li>
+              <li><span class="step-num">4</span><div>Simpan di tempat sejuk (18–22°C) atau dalam kotak berlubang untuk sirkulasi udara.</div></li>
+              <li><span class="step-num">5</span><div>Konsumsi dalam 1–3 hari setelah panen untuk kualitas optimal.</div></li>
+            </ul>
+          </div>
+          <div class="illus-card reveal">
+            <div class="chapter-illus">🍈<p>Ilustrasi: Teknik Pemotongan Tangkai Buah</p><small>Posisi pemotongan 5-10 cm dari pangkal buah</small></div>
+            <div class="tip-box">
+              <div class="tip-header">💡 Tips Ahli</div>
+              <ul>
+                <li>Pasarkan durian segar dalam 24 jam setelah panen untuk harga premium.</li>
+                <li>Untuk ekspor, panen saat 80% matang dan cold chain di 4°C.</li>
+                <li>Buah yang retak atau terbentur jangan disimpan — konsumsi segera.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BAB 8: PEMUPUKAN ===== -->
+    <section class="chapter chapter-alt" id="bab8">
+      <div class="chapter-number reveal">Bab 08</div>
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">🧪</div>
+        <h2 class="chapter-title">Pemupukan</h2>
+        <p class="chapter-desc">Nutrisi yang tepat, waktu yang benar — fondasi produktivitas durian sepanjang tahun.</p>
+      </div>
+
+      <div class="chapter-body">
+        <div class="concept-card reveal">
+          <h3>📌 Ringkasan Konsep</h3>
+          <p>Durian membutuhkan nutrisi seimbang yang berbeda di setiap fase pertumbuhan. Kombinasi pupuk organik dan anorganik memberikan hasil terbaik — organik membangun struktur tanah jangka panjang, sementara anorganik menyuplai nutrisi tersedia secara cepat.</p>
+        </div>
+
+        <div class="fertilizer-grid reveal">
+          <div class="fert-card organic">
+            <div class="fert-header">🌿 Pupuk Organik</div>
+            <ul>
+              <li><strong>Kompos matang:</strong> 20–30 kg/pohon/tahun</li>
+              <li><strong>Pupuk kandang:</strong> 15–20 kg/pohon/tahun</li>
+              <li><strong>Bokashi:</strong> 10 kg/pohon saat pra-berbunga</li>
+              <li><strong>MOL (Mikroorganisme Lokal):</strong> Siram 1 L/pohon/bulan</li>
+              <li><strong>Humus cacing:</strong> 5 kg/pohon untuk bibit muda</li>
+            </ul>
+          </div>
+          <div class="fert-card chemical">
+            <div class="fert-header">🧪 Pupuk Kimia</div>
+            <ul>
+              <li><strong>NPK 16-16-16:</strong> 300–500 g/pohon (fase vegetatif)</li>
+              <li><strong>TSP (P):</strong> 200–300 g/pohon (pra-berbunga)</li>
+              <li><strong>KCl (K):</strong> 200–250 g/pohon (pematangan buah)</li>
+              <li><strong>Urea (N):</strong> 100–200 g/pohon (awal pertumbuhan)</li>
+              <li><strong>Kieserite (Mg):</strong> 100 g/pohon (isi buah)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="two-col reveal" style="margin-top:2rem;">
+          <div class="steps-card">
+            <h3>✅ Jadwal & Metode Pemupukan</h3>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span><div><strong>Cara Tabur:</strong> Taburkan merata di sekeliling kanopi pohon (drip zone), jangan di pangkal batang.</div></li>
+              <li><span class="step-num">2</span><div><strong>Cara Tugal:</strong> Buat lubang 10 cm sedalam 15 cm di 4–6 titik sekitar pohon, masukkan pupuk, tutup kembali.</div></li>
+              <li><span class="step-num">3</span><div><strong>Fertigasi:</strong> Larutkan pupuk dalam sistem irigasi tetes untuk efisiensi tinggi.</div></li>
+              <li><span class="step-num">4</span><div><strong>Waktu Pemupukan:</strong> Setelah hujan atau penyiraman agar pupuk langsung terserap akar.</div></li>
+            </ul>
+          </div>
+          <div class="illus-card reveal">
+            <div class="chapter-illus">🧪<p>Ilustrasi: Zona Aplikasi Pupuk (Drip Zone)</p><small>Area penaburan pupuk mengikuti proyeksi kanopi pohon</small></div>
+            <div class="tip-box">
+              <div class="tip-header">💡 Tips Ahli</div>
+              <ul>
+                <li>Lakukan uji tanah setiap 2 tahun sekali untuk menyesuaikan dosis dengan kondisi aktual.</li>
+                <li>Campurkan pupuk organik dan kimia untuk mencegah pemadatan tanah jangka panjang.</li>
+                <li>Hindari pemupukan nitrogen berlebihan saat pra-berbunga — pohon akan fokus tumbuh daun.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REFERENSI ===== -->
+    <section class="chapter" id="referensi">
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">📚</div>
+        <h2 class="chapter-title">Referensi</h2>
+        <p class="chapter-desc">Sumber-sumber ilmiah dan praktis yang menjadi dasar panduan ini.</p>
+      </div>
+      <div class="chapter-body">
+        <div class="ref-grid reveal">
+          <div class="ref-card">
+            <div class="ref-num">01</div>
+            <div class="ref-content">
+              <div class="ref-title">Pedoman Teknis Budidaya Durian</div>
+              <div class="ref-source">Kementerian Pertanian RI, Direktorat Jenderal Hortikultura, 2021</div>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-num">02</div>
+            <div class="ref-content">
+              <div class="ref-title">Durian: Botany, Production and Uses</div>
+              <div class="ref-source">Compiled by C. Lim, CABI Publishing, Wallingford UK, 2012</div>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-num">03</div>
+            <div class="ref-content">
+              <div class="ref-title">Integrated Pest Management in Tropical Orchards</div>
+              <div class="ref-source">FAO Plant Production and Protection Paper, Rome, 2020</div>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-num">04</div>
+            <div class="ref-content">
+              <div class="ref-title">Panduan Pemupukan Berimbang Tanaman Buah Tropika</div>
+              <div class="ref-source">Balai Penelitian Tanah, Bogor, 2019</div>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-num">05</div>
+            <div class="ref-content">
+              <div class="ref-title">Musang King Durian Cultivation Guide</div>
+              <div class="ref-source">Malaysian Agricultural Research and Development Institute (MARDI), 2022</div>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-num">06</div>
+            <div class="ref-content">
+              <div class="ref-title">Teknologi Panen dan Pascapanen Durian</div>
+              <div class="ref-source">Badan Litbang Pertanian, Pusat Kajian Hortikultura Tropika IPB, 2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="chapter chapter-alt" id="faq">
+      <div class="chapter-header reveal">
+        <div class="chapter-icon">❓</div>
+        <h2 class="chapter-title">FAQ</h2>
+        <p class="chapter-desc">Pertanyaan yang sering diajukan oleh para petani durian pemula.</p>
+      </div>
+      <div class="chapter-body">
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Berapa lama durian mulai berbuah dari bibit okulasi?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Bibit durian dari hasil okulasi (sambung pucuk atau okulasi mata tempel) umumnya mulai berbuah pada usia <strong>3–5 tahun</strong> setelah tanam di lahan. Ini jauh lebih cepat dibandingkan bibit dari biji yang membutuhkan <strong>8–12 tahun</strong>. Faktor yang mempercepat pembuahan antara lain: kualitas bibit, kesuburan tanah, manajemen air, dan pemupukan yang tepat.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Apakah durian bisa ditanam di dataran rendah?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Ya, durian dapat tumbuh baik di dataran rendah hingga ketinggian <strong>800 mdpl</strong>. Durian sangat adaptif terhadap berbagai ketinggian dengan syarat suhu berkisar <strong>24–32°C</strong>, curah hujan 1.500–2.500 mm/tahun, dan musim kering minimal 1–2 bulan sebagai pemicu pembungaan. Di dataran rendah yang sangat panas (&gt;35°C), perlu naungan sementara untuk bibit muda.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Bagaimana cara mengetahui durian kekurangan nutrisi?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Gejala defisiensi nutrisi dapat dikenali dari tampilan daun:</p>
+              <ul style="margin-top:0.5rem; padding-left:1.5rem;">
+                <li><strong>Nitrogen (N):</strong> Daun tua menguning secara merata dari bawah ke atas</li>
+                <li><strong>Besi (Fe):</strong> Daun muda menguning dengan tulang daun tetap hijau (klorosis interveinal)</li>
+                <li><strong>Kalium (K):</strong> Tepi daun tua mengering dan kecoklatan</li>
+                <li><strong>Magnesium (Mg):</strong> Bercak kuning di antara tulang daun tua</li>
+              </ul>
+              <p style="margin-top:0.5rem;">Lakukan uji jaringan daun di laboratorium untuk diagnosis lebih akurat.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Mengapa buah durian banyak yang rontok sebelum matang?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Kerontokan buah muda (June drop) adalah hal normal di mana pohon secara alami menyeleksi buah. Namun kerontokan berlebihan (&gt;70%) bisa disebabkan oleh:</p>
+              <ul style="margin-top:0.5rem; padding-left:1.5rem;">
+                <li>Stres air (kekeringan atau genangan) saat fase pengisian buah</li>
+                <li>Kekurangan Kalsium (Ca) dan Boron (B)</li>
+                <li>Serangan trips atau penggerek buah</li>
+                <li>Penyerbukan yang tidak sempurna</li>
+              </ul>
+              <p style="margin-top:0.5rem;">Solusi: stabilkan suplai air, aplikasikan CaNO3 + Boron foliar, dan lakukan pengendalian trips.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Varietas durian apa yang paling menguntungkan untuk dibudidayakan?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Pilihan varietas bergantung pada target pasar:</p>
+              <ul style="margin-top:0.5rem; padding-left:1.5rem;">
+                <li><strong>Musang King:</strong> Harga tertinggi, target ekspor, namun butuh perawatan intensif</li>
+                <li><strong>Monthong:</strong> Produktivitas tinggi, pasar lokal dan ekspor, toleran kondisi sub-optimal</li>
+                <li><strong>Bawor:</strong> Adaptasi luas di Indonesia, buah besar, harga menengah</li>
+                <li><strong>Petruk:</strong> Sangat diminati pasar Jawa, aroma khas, tahan penyakit</li>
+              </ul>
+              <p style="margin-top:0.5rem;">Rekomendasi: tanam <strong>2–3 varietas berbeda</strong> untuk diversifikasi risiko dan memperpanjang musim panen.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Berapa modal awal yang dibutuhkan untuk 1 hektar kebun durian?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Perkiraan investasi awal untuk 1 hektar kebun durian (±100–150 pohon dengan jarak 8×8 m):</p>
+              <ul style="margin-top:0.5rem; padding-left:1.5rem;">
+                <li>Bibit okulasi berkualitas: Rp 3–10 juta</li>
+                <li>Persiapan lahan & pengolahan tanah: Rp 5–15 juta</li>
+                <li>Pupuk dasar & instalasi irigasi: Rp 5–10 juta</li>
+                <li>Biaya perawatan tahun 1–3: Rp 10–20 juta/tahun</li>
+              </ul>
+              <p style="margin-top:0.5rem;"><strong>Total estimasi tahun 1: Rp 20–50 juta.</strong> Modal kembali umumnya pada tahun ke-5 hingga ke-7 saat produksi mulai stabil.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-icon">🌳</span>
+          <span class="brand-text">JasingaDruian</span>
+        </div>
+        <p class="footer-tagline">Panduan Lengkap Budidaya Durian — E-Book Digital</p>
+      </div>
+      <div class="footer-chapters">
+        <a href="#bab1">Pembibitan</a>
+        <a href="#bab2">Penanaman</a>
+        <a href="#bab3">Penyakit</a>
+        <a href="#bab4">Pruning</a>
+        <a href="#bab5">Penyemprotan</a>
+        <a href="#bab6">Pembuahan</a>
+        <a href="#bab7">Panen</a>
+        <a href="#bab8">Pemupukan</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 JasingaDurian · Panduan ini bersifat edukatif</p>
+        <p>Dikembangkan untuk Kebon Jasinga Sektor Jasinga</p>
+      </div>
+    </footer>
+
+  </div><!-- end main-wrapper -->
+
+  <!-- Scroll-to-top button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
